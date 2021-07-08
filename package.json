@@ -1,0 +1,30 @@
+{
+    "name": "paste-from-word",
+    "version": "1.0.0",
+    "description": "Paste from Microsoft Word without loosing any formatting for all rich text editor.粘贴Word文档内容到任何富文本编辑器",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "rollup --c",
+        "dev": "rollup -c -w"
+    },
+    "keywords": [
+        "粘贴word文档",
+        "Paste Microsoft Word",
+        "rich text",
+        "富文本编辑器"
+    ],
+    "author": "heweifeng",
+    "license": "MIT",
+    "devDependencies": {
+        "@babel/core": "^7.14.6",
+        "@babel/preset-env": "^7.14.7",
+        "eslint": "^7.30.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-prettier": "^3.4.0",
+        "prettier": "^2.3.2",
+        "rollup": "^2.52.8",
+        "rollup-plugin-babel": "^4.4.0",
+        "rollup-plugin-eslint": "^7.0.0",
+        "rollup-plugin-uglify": "^6.0.4"
+    }
+}
