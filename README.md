@@ -1,59 +1,25 @@
-# wangEditor
+# paste from word
 
-![build badge](https://github.com/wangeditor-team/wangEditor/workflows/build/badge.svg)
+粘贴 Word 文档内容到任何富文本编辑器
 
-轻量级 web 富文本编辑器，配置方便，使用简单。
-
-- 官网 [www.wangEditor.com](http://www.wangeditor.com/)
-- 文档 [www.wangEditor.com/doc](http://www.wangeditor.com/doc/)
-
-![](./docs/imgs/demo.png)
-
-当前是 `v4` 版本。想继续使用 `v3` 版本看[这里](http://www.wangeditor.com/doc/pages/01-%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8/08-%E4%BD%BF%E7%94%A8V3%E7%89%88%E6%9C%AC.html)。
+Paste from Microsoft Word without loosing any formatting for all rich text editor.
 
 ## 浏览器兼容性
 
-兼容常见的 PC 浏览器：Chrome，Firefox，Safar，Edge，QQ 浏览器，IE11 。
+兼容常见的 PC 浏览器：Chrome，Firefox，Edge，QQ 浏览器，IE11 。
 
-不支持移动端。
+🚧 不支持 MacOS 的浏览器。
+🚧 Not Support MacOS
 
 ## 基本使用
 
-npm 安装 `npm i wangeditor --save` ，几行代码即可创建一个编辑器
+npm 安装 `npm i paste-from-word --save`
 
 ```js
-import E from "wangeditor";
-const editor = new E("#div1");
-editor.create();
+import pasteFromWord from 'paste-from-word'
+const paster = new pasteFromWord()
+paster.parse(e, function (res) {
+    // do something with HTML
+    console.log(res) // {html: '<p>paste-from-word</p>', text: 'paste-from-word'}
+})
 ```
-
-更多使用方法，可参考[文档](http://www.wangeditor.com/doc/)。
-
-## 交流
-
-加入 QQ 群
-- 164999061（人已满）
-- 710646022（人已满）
-- 901247714
-
-提交 bug 或建议
-- [github issues](https://github.com/wangeditor-team/wangeditor/issues) 提交问题
-
-## 开发团队
-
-有专业[开发团队](http://www.wangeditor.com/doc/#%E5%BC%80%E5%8F%91%E4%BA%BA%E5%91%98)维护，非个人单兵作战。
-
-想加入 wangEditor 研发团队，可申请加入 QQ 群，然后私聊群主。
-
-## 开发文档
-
-[开发文档](./docs/README.md)，供申请加入开发团队，或者对源码感兴趣的用户阅读。
-
-加入开发团队后，还会有更详细的开发流程、规划、沟通机制。内容太多，这里不公开。
-
-## 为我们加油
-
-你的支持，将激励我们输出更多优质内容！
-
-![](./docs/imgs/wechat-pay.jpeg)
-![](./docs/imgs/ali-pay.jpeg)
