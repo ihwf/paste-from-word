@@ -15,6 +15,13 @@
     ],
     "author": "heweifeng",
     "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ihwf/paste-from-word"
+    },
+    "bugs": {
+        "url": "https://github.com/ihwf/paste-from-word/issues"
+    },
     "devDependencies": {
         "@babel/core": "^7.14.6",
         "@babel/preset-env": "^7.14.7",
