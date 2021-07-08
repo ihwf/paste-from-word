@@ -18,7 +18,7 @@ npm 安装 `npm i paste-from-word --save`
 ```js
 import pasteFromWord from 'paste-from-word'
 const paster = new pasteFromWord()
-paster.parse(e, function (res) {
+paster.parse(pasteEvent, function (res) {
     // do something with HTML
     console.log(res) // {html: '<p>paste-from-word</p>', text: 'paste-from-word'}
 })
