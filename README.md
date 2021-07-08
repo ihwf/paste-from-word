@@ -25,8 +25,13 @@ const paster = new pasteFromWord({
         })
     },
 })
-paster.parse(pasteEvent, function (res) {
-    // do something with HTML
-    console.log(res) // {html: '<p>paste-from-word</p>', text: 'paste-from-word'}
+
+const target = document.querySelector('div.target')
+
+target.addEventListener('paste', pasteEvent => {
+    paster.parse(pasteEvent, function (res) {
+        // do something with HTML
+        console.log(res) // {html: '<p>paste-from-word</p>', text: 'paste-from-word'}
+    })
 })
 ```
