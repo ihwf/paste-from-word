@@ -1,6 +1,6 @@
 {
     "name": "paste-from-word",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Paste from Microsoft Word without loosing any formatting for all rich text editor.粘贴Word文档内容到任何富文本编辑器",
     "main": "dist/index.js",
     "scripts": {
