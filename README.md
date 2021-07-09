@@ -1,15 +1,15 @@
 # paste from word
 
-粘贴 Word 文档内容到任何富文本编辑器
+粘贴 Word 文档内容到任何富文本编辑器, 完美支持多图文
 
-Paste from Microsoft Word without loosing any formatting for all rich text editor.
+Paste from Microsoft Word without loosing any formatting for all rich text editor, support multi image and text.
 
 ## 浏览器兼容性
 
 兼容常见的 PC 浏览器：Chrome，Firefox，Edge，QQ 浏览器，IE11 。
 
-🚧 不支持 MacOS 的浏览器。
-🚧 Not Support MacOS
+🚧 MacOS 的浏览器不支持粘贴 word 文档内的图片。
+🚧 MacOS browser Not Support paste image from Microsoft Word
 
 ## 基本使用
 
