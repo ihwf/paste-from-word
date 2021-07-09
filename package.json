@@ -17,7 +17,7 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/ihwf/paste-from-word"
+        "url": "https://github.com/ihwf/paste-from-word"
     },
     "bugs": {
         "url": "https://github.com/ihwf/paste-from-word/issues"
