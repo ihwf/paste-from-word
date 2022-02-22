@@ -18,12 +18,16 @@ npm 安装 `npm i paste-from-word --save`
 ```js
 import pasteFromWord from 'paste-from-word'
 const paster = new pasteFromWord({
-    // optional. Processing images function, the option blob is image blob, you can do something with the blob.And the option next is a function to put the image link to HTML string | 可选项, 图片处理函数, 每一张图片都会调用此函数, 参数 blob 为图片的 blob 对象, 可以用于上传到服务器,获取到图片在服务器上的链接后, 调用 next 方法会自动回填到 HTML 字符串中
+    // optional. Processing images function, the option blob is image blob, you can do something with the blob.And the option next is a function to put the image link to HTML string
+    // 可选项, 图片处理函数, 每一张图片都会调用此函数, 参数 blob 为图片的 blob 对象, 可以用于上传到服务器,获取到图片在服务器上的链接后, 调用 next 方法会自动回填到 HTML 字符串中
     imageHandler: function (blob, next) {
-        update(blob).then(function (response) {
+        upload(blob).then(function (response) {
             next(response.imageUrl)
         })
     },
+    // optional. If this option set true, will ignore paste single image or file. Default is false
+    // 可选项. 是否忽略粘贴单张图片(剪贴板中只有一张图片)
+    ignorePasteSingleFile: true, // true/false
 })
 
 const target = document.querySelector('div.target')
