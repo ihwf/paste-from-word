@@ -1,7 +1,7 @@
 {
     "name": "paste-from-word",
-    "version": "1.0.4",
-    "description": "Paste from Microsoft Word without loosing any formatting for all rich text editor.粘贴Word文档内容到任何富文本编辑器",
+    "version": "1.0.5",
+    "description": "Paste from Microsoft Word without loosing any formatting for all rich text editor.粘贴Word文档内容到任何富文本编辑器,支持多图文",
     "main": "dist/index.js",
     "scripts": {
         "build": "rollup --c",
@@ -10,8 +10,11 @@
     "keywords": [
         "粘贴word文档",
         "Paste Microsoft Word",
-        "rich text",
-        "富文本编辑器"
+        "Paste Images from Word",
+        "rich text editor",
+        "富文本编辑器",
+        "粘贴 word 文档",
+        "粘贴 word 图片"
     ],
     "author": "heweifeng",
     "license": "MIT",
